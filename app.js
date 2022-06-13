@@ -26,11 +26,9 @@ function buildTable(data) {
 // buildTable(tableData)
 
 // 1. Create a variable to keep track of all the filters as an object.
-// ia am assuing var since its a little more specific than let its not def that would be python...
 var filters = {};
 
 // 3. Use this function to update the filters. 
-// im so confused the module gave me this function handleClick() this techinically is the same things a below 
 function updateFilters() {
 
     // 4a. Save the element that was changed as a variable. 
@@ -66,7 +64,7 @@ function updateFilters() {
   
     // 9. Loop through all of the filters and keep any data that
     // matches the filter values 
-    // the mod says this filteredData = filteredData.filter(row => row.datetime === date); SOF said do this?? 
+  
     Object.entries(filters).forEach(([key, value]) => {
       filteredData = filteredData.filter(row => row[key] === value);
     });
